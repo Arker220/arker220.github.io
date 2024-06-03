@@ -9,12 +9,18 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         header {
             background-color: #333;
             color: white;
             padding: 1em 0;
             text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin-top: 10px;
         }
         nav {
             margin: 1em 0;
@@ -23,15 +29,37 @@
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
         section {
             padding: 2em;
+            background-color: white;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .about, .projects, .contact {
             margin: 2em 0;
         }
         .project-item {
             margin: 1em 0;
+            text-align: center;
+        }
+        .project-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project-item h3 {
+            margin-top: 10px;
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -39,6 +67,7 @@
 
 <header>
     <h1>Arker's Portfolio</h1>
+    <img src="https://raw.githubusercontent.com/Arker220/arker220.github.io/main/Images/profile-picture.jpg" alt="Arker's Profile Picture">
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
@@ -54,15 +83,17 @@
 <section id="projects" class="projects">
     <h2>Projects</h2>
     <div class="project-item">
-        <h3>Project One</h3>
-        <p>Description of Project One. This project involves...</p>
+        <img src="path/to/your/project-image.jpg" alt="No image yet..">
+        <h3>Puzzling Prototypes</h3>
+        <p>Puzzling Prototypes is a puzzle-platformer, movement FPS about playing a prototype of a game that has self-aware characters. Grapple, jump, bunny hop, and more throughout multiple levels, plot twists, and new mechanics.  </p>
     </div>
 </section>
 
 <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>If you'd like to get in touch, please email me at <a href="mailto:arker@example.com">arker@example.com</a>.</p>
+    <p>If you'd like to get in touch, please email me <a href="mailto:ben220@duck.com">here</a>.</p>
 </section>
 
 </body>
 </html>
+
